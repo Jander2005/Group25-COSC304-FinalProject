@@ -29,28 +29,28 @@
 
 <h1 class="changer"><a href="index.jsp">C&J's Tasty Hats Main Page</a></h1>
 
-<h2 class ="left-offset"><a href="login.jsp">Login</a></h2>
+<h2 class ="left-offset"><a href="/shop/login.jsp">Login</a></h2>
 
-<h2 class ="left-offset"><a href="listprod.jsp">Begin Shopping</a></h2>
+<h2 class ="left-offset"><a href="/shop/listprod.jsp">Begin Shopping</a></h2>
 
-<h2 class ="left-offset"><a href="listorder.jsp">List All Orders</a></h2>
+<h2 class ="left-offset"><a href="/shop/listorder.jsp">List All Orders</a></h2>
 
-<h2 class ="left-offset"><a href="customer.jsp">Customer Info</a></h2>
+<h2 class ="left-offset"><a href="/shop/customer.jsp">Customer Info</a></h2>
 
-<h2 class ="left-offset"><a href="admin.jsp">Administrators</a></h2>
+<h2 class ="left-offset"><a href="/shop/admin.jsp">Administrators</a></h2>
 
-<h2 class ="left-offset"><a href="logout.jsp">Log out</a></h2>
+<h2 class ="left-offset"><a href="/shop/logout.jsp">Log out</a></h2>
 <%
 String user = (String) session.getAttribute("authenticatedUser");
 if (user != null) {
 %>
 
-<h2 class ="left-offset"><a href="account.jsp">Account Info</a></h2>
+<h2 class ="left-offset"><a href="/shop/account.jsp">Account Info</a></h2>
 
 <%
  } else {
 %>
-<h2 class ="left-offset"><a href="register.jsp">Register New Account</a></h2>
+<h2 class ="left-offset"><a href="/shop/register.jsp">Register New Account</a></h2>
 <%
  }
 %>
@@ -60,9 +60,9 @@ if (user != null) {
 		out.println("<h3 class =\"left-offset\">Signed in as: "+userName+"</h3>");
 %>
 
-<h4 class ="left-offset"><a href="ship.jsp?orderId=1">Test Ship orderId=1</a></h4>
+<h4 class ="left-offset"><a href="/shop/ship.jsp?orderId=1">Test Ship orderId=1</a></h4>
 
-<h4 class ="left-offset"><a href="ship.jsp?orderId=3">Test Ship orderId=3</a></h4>
+<h4 class ="left-offset"><a href="/shop/ship.jsp?orderId=3">Test Ship orderId=3</a></h4>
 
 </body>
 

@@ -1,4 +1,5 @@
 <%@ page import="java.sql.*, javax.sql.*" %>
+<%@ include file="auth.jsp"%>
 <%@ include file="jdbc.jsp" %>
 <!DOCTYPE html>
 <html>
